@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/background"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/navigation_my_picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/icon_main" />
+
+
+    <TextView
+        android:id="@+id/navigation_my_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="충남대학교 컴퓨터공학과"
+        android:textSize="8pt"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/navigation_my_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:text="권대원 김미지 전형진"
+        android:textSize="8pt" />
+
+</LinearLayout>

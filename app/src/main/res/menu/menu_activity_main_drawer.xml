@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/straight">
+            <menu>
+                <item
+                    android:id="@+id/navigation_map"
+                    android:icon="@drawable/ic_menu_location"
+                    android:title="@string/map" />
+                <item
+                    android:id="@+id/navigation_road"
+                    android:icon="@drawable/ic_menu_map"
+                    android:title="@string/road" />
+                <item
+                    android:id="@+id/navigation_sisul"
+                    android:icon="@drawable/ic_menu_sisul"
+                    android:title="@string/sisul"/>
+                <item
+                    android:id="@+id/navigation_event"
+                    android:icon="@drawable/ic_menu_event"
+                    android:title="@string/event"/>
+                <item
+                    android:id="@+id/navigation_bus"
+                    android:icon="@drawable/busimage"
+                    android:title="BusStop"/>
+                <item
+                    android:id="@+id/navigation_tour"
+                    android:icon="@drawable/ic_menu_tour"
+                    android:title="CampusTour"/>
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/ic_menu_android"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/navigation_logout"
+            android:icon="@drawable/ic_menu_android"
+            android:title="Logout" />
+    </group>
+
+</menu>

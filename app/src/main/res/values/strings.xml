@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">충남대 캠퍼스맵</string>
+    <string name="straight">바로가기</string>
+    <string name="map">Map</string>
+    <string name="road">road</string>
+    <string name="sisul">Aroundhere</string>
+    <string name="event">Event</string>
+    <string name="kakao_app_key">5b41de40d7478b93bb1c13f61b234322</string>
+    <string name="text_for_login_kakao_account">Log in with Kakao</string>
+    <string name="start">Start</string>
+</resources>

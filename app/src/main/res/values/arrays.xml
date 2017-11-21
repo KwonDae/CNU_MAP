@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="From_where">
+        <item >중앙도서관</item>
+        <item >공과대학 1호관</item>
+        <item >경상대학</item>
+        <item >공과대학 5호관</item>
+        <item >대학본부</item>
+        <item >정심화국제 문화회관</item>
+        <item >산학연교육연구관</item>
+        <item >공과대학 2호관</item>
+        <item >정문</item>
+        <item >공과대학 3호관</item>
+        <item >공과대학 4호관</item>
+        <item >제2후생관</item>
+        <item >제1후생관</item>
+        <item >제3후생관</item>
+        <item >사회과학대학</item>
+        <item >약학대학</item>
+        <item >자연과학대학</item>
+        <item >백마교양교육관</item>
+    </string-array>
+
+    <string-array name="To_where">
+        <item >중앙도서관</item>
+        <item >공과대학 1호관</item>
+        <item >경상대학</item>
+        <item >공과대학 5호관</item>
+        <item >대학본부</item>
+        <item >정심화국제 문화회관</item>
+        <item >산학연교육연구관</item>
+        <item >공과대학 2호관</item>
+        <item >정문</item>
+        <item >공과대학 3호관</item>
+        <item >공과대학 4호관</item>
+        <item >제2후생관</item>
+        <item >제1후생관</item>
+        <item >제3후생관</item>
+        <item >사회과학대학</item>
+        <item >약학대학</item>
+        <item >자연과학대학</item>
+        <item >백마교양교육관</item>
+    </string-array>
+
+</resources>
