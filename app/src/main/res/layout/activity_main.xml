@@ -26,8 +26,8 @@
 
             <ImageButton
                 android:id="@+id/touricon"
-                android:layout_width="156dp"
-                android:layout_height="158dp"
+                android:layout_width="136dp"
+                android:layout_height="138dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
