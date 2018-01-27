@@ -26,7 +26,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     ActionBarDrawerToggle drawerToggle;
     ImageButton mapicon,sisulicon,roadicon,eventicon,busicon,touricon;
     NavigationView navigationView;
-    private final long FINISH_INTERVAL_TIME = 2000;
+    private final long FINISH_INTERVAL_TIME = 1000;
     private long backPressedTime = 0;
 
 
