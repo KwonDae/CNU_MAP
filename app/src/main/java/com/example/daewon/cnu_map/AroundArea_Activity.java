@@ -35,6 +35,9 @@ public class AroundArea_Activity extends BaseActivity implements NavigationView.
 
     ListView listView;
     AroundAdapter adapter;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,8 +92,8 @@ public class AroundArea_Activity extends BaseActivity implements NavigationView.
             }
         });
 
-        listView=(ListView)findViewById(R.id.listview);
-        adapter=new AroundAdapter(AroundArea_Activity.this, R.layout.around_item, new ArrayList<Around>());
+        listView = (ListView) findViewById(R.id.listview);
+        adapter = new AroundAdapter(AroundArea_Activity.this, R.layout.around_item, new ArrayList<Around>());
         listView.setAdapter(adapter);
 
         addData();
@@ -98,41 +101,41 @@ public class AroundArea_Activity extends BaseActivity implements NavigationView.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Around item=adapter.getItem(position);
+                Around item = adapter.getItem(position);
 
-                switch (position){
+                switch (position) {
                     case 0:
-                        String url0="daummaps://search?q=맛집&p=36.370082,127.346223";
+                        String url0 = "daummaps://search?q=맛집&p=36.370082,127.346223";
                         Intent intent0 = new Intent(Intent.ACTION_VIEW, Uri.parse(url0));
                         startActivity(intent0);
                         break;
                     case 1:
-                        String url1="daummaps://search?q=은행&p=36.370082,127.346223";
+                        String url1 = "daummaps://search?q=은행&p=36.370082,127.346223";
                         Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(url1));
                         startActivity(intent1);
                         break;
                     case 2:
-                        String url2="daummaps://search?q=카페&p=36.370082,127.346223";
+                        String url2 = "daummaps://search?q=카페&p=36.370082,127.346223";
                         Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
                         startActivity(intent2);
                         break;
                     case 3:
-                        String url3="daummaps://search?q=병원&p=36.370082,127.346223";
+                        String url3 = "daummaps://search?q=병원&p=36.370082,127.346223";
                         Intent intent3 = new Intent(Intent.ACTION_VIEW, Uri.parse(url3));
                         startActivity(intent3);
                         break;
                     case 4:
-                        String url4="daummaps://search?q=서점&p=36.370082,127.346223";
+                        String url4 = "daummaps://search?q=서점&p=36.370082,127.346223";
                         Intent intent4 = new Intent(Intent.ACTION_VIEW, Uri.parse(url4));
                         startActivity(intent4);
                         break;
                     case 5:
-                        String url5="daummaps://search?q=마트&p=36.370082,127.346223";
+                        String url5 = "daummaps://search?q=마트&p=36.370082,127.346223";
                         Intent intent5 = new Intent(Intent.ACTION_VIEW, Uri.parse(url5));
                         startActivity(intent5);
                         break;
                     case 6:
-                        String url6="daummaps://search?q=약국&p=36.370082,127.346223";
+                        String url6 = "daummaps://search?q=약국&p=36.370082,127.346223";
                         Intent intent6 = new Intent(Intent.ACTION_VIEW, Uri.parse(url6));
                         startActivity(intent6);
                         break;
@@ -148,9 +151,9 @@ public class AroundArea_Activity extends BaseActivity implements NavigationView.
 
     @Override
     public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }else{
+        } else {
             super.onBackPressed();
         }
     }
@@ -163,34 +166,35 @@ public class AroundArea_Activity extends BaseActivity implements NavigationView.
         return super.onOptionsItemSelected(item);
     }
 
-    class AroundAdapter extends ArrayAdapter<Around>{
+    class AroundAdapter extends ArrayAdapter<Around> {
         int resource;
+
         public AroundAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Around> objects) {
             super(context, resource, objects);
-            this.resource=resource;
+            this.resource = resource;
         }
 
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            View view=convertView;
+            View view = convertView;
 
             AroundHolder holder;
 
-            if(view==null){
-                LayoutInflater inflater=getLayoutInflater();
+            if (view == null) {
+                LayoutInflater inflater = getLayoutInflater();
 
-                view = inflater.inflate(this.resource,null);
+                view = inflater.inflate(this.resource, null);
 
-                holder=new AroundHolder();
-                holder.imageView=(ImageView)view.findViewById(R.id.imageView);
-                holder.textView=(TextView)view.findViewById(R.id.textView5);
+                holder = new AroundHolder();
+                holder.imageView = (ImageView) view.findViewById(R.id.imageView);
+                holder.textView = (TextView) view.findViewById(R.id.textView5);
 
                 view.setTag(holder);
             }
-            final Around item=getItem(position);
-            if(item!=null){
-                holder=(AroundHolder)view.getTag();
+            final Around item = getItem(position);
+            if (item != null) {
+                holder = (AroundHolder) view.getTag();
 
                 holder.imageView.setImageResource(item.image);
                 holder.textView.setText(item.name);
@@ -198,45 +202,46 @@ public class AroundArea_Activity extends BaseActivity implements NavigationView.
             return view;
         }
     }
-    void addData(){
-        Around around1=new Around();
-        around1.name="맛집";
-        around1.image=R.drawable.restaurant;
+
+    void addData() {
+        Around around1 = new Around();
+        around1.name = "맛집";
+        around1.image = R.drawable.restaurant;
         adapter.add(around1);
 
-        Around around2=new Around();
-        around2.name="은행";
-        around2.image=R.drawable.bank;
+        Around around2 = new Around();
+        around2.name = "은행";
+        around2.image = R.drawable.bank;
         adapter.add(around2);
 
-        Around around3=new Around();
-        around3.name="카페";
-        around3.image=R.drawable.cafe;
+        Around around3 = new Around();
+        around3.name = "카페";
+        around3.image = R.drawable.cafe;
         adapter.add(around3);
 
-        Around around4=new Around();
-        around4.name="병원";
-        around4.image=R.drawable.hospital;
+        Around around4 = new Around();
+        around4.name = "병원";
+        around4.image = R.drawable.hospital;
         adapter.add(around4);
 
-        Around around5=new Around();
-        around5.name="서점";
-        around5.image=R.drawable.library;
+        Around around5 = new Around();
+        around5.name = "서점";
+        around5.image = R.drawable.library;
         adapter.add(around5);
 
-        Around around6=new Around();
-        around6.name="마트";
-        around6.image=R.drawable.mart;
+        Around around6 = new Around();
+        around6.name = "마트";
+        around6.image = R.drawable.mart;
         adapter.add(around6);
 
-        Around around7=new Around();
-        around7.name="약국";
-        around7.image=R.drawable.pharmacy;
+        Around around7 = new Around();
+        around7.name = "약국";
+        around7.image = R.drawable.pharmacy;
         adapter.add(around7);
 
-        Around around8=new Around();
-        around8.name="ATM";
-        around8.image=R.drawable.atm;
+        Around around8 = new Around();
+        around8.name = "ATM";
+        around8.image = R.drawable.atm;
         adapter.add(around8);
     }
 }

@@ -11,5 +11,4 @@ public class AroundHolder {
     public ImageView imageView;
     public TextView textView;
 
-
 }
